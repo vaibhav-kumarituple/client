@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Video Chat</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Random Video Chat</h1>
+        </header>
+        <main>
+            <div id="video-container">
+                <video
+                    id="local-video"
+                    class="local-video"
+                    muted
+                    autoplay
+                    playsinline
+                ></video>
+                <video
+                    id="remote-video"
+                    class="remote-video"
+                    autoplay
+                    playsinline
+                ></video>
+            </div>
+            <button id="create-offer">Create Offer</button>
+            <label>SDP Offer</label>
+            <textarea id="offer-sdp"></textarea>
+            <br />
+            <button id="create-answer">Create Answer</button>
+            <label>SDP Offer</label>
+            <textarea id="answer-sdp"></textarea>
+            <br />
+            <button id="add-answer">Add Answer</button>
+            <br />
+            <div id="controls">
+                <button id="connect">Connect</button>
+                <button id="nextChat" disabled>Next</button>
+                <button id="endChat" disabled>End</button>
+            </div>
+        </main>
+
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
