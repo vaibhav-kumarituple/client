@@ -13,7 +13,7 @@ const servers = {
         },
     ],
 };
-console.log(CONFIG.SIGNALING_SERVER_URL);
+
 const signalingServer = new WebSocket(CONFIG.SIGNALING_SERVER_URL);
 
 // Initialize the local stream and set up the connection
